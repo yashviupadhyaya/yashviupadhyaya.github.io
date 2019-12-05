@@ -924,8 +924,8 @@ textarea.form-control {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color:#f44336;
-  color: white;
+  /*background-color:#f44336;*/
+  color: black;
 }
 
 
