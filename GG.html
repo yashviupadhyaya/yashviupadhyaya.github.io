@@ -180,7 +180,7 @@
     <th  class="bg-secondary">Gesture Glove</th>
   </tr>
   <tr>
-    <td> Only possible when there is less number of instructions. Otherwise, it becomes cluttered and confusing.</td>
+    <td> Only possible when there are less instructions. Otherwise, it becomes cluttered and confusing.</td>
     <td>Gives 2^n solutions for n fingers. Only one needs is to refer to a chart of gesture vs command.</td>
   </tr>
   <tr>
@@ -204,7 +204,7 @@
 	<article class="single-post">
 
 		<h3 style="">Design Challenge</h3>
-		<p>A major drawback that exists in all current systems is that the user needs to be conscious about their finger bends. There can be unnecessary outputs in such systems as the patient might unconsciously bend their fingers while resting. Therefore it becomes necessary to make the system while considering the natural bends of the fingers and the bends when the patient is resting.</p>
+		<p>A major drawback that exists in all current systems is that the user needs to be conscious about their finger bends. There can be unnecessary outputs in such systems as the patient might unconsciously bend his/her fingers while resting. Therefore it becomes necessary to make the system, considering the natural bends of the fingers and the bends when the patient is resting.</p>
 		</div>
 
 </article></div></div></div></div></div>
@@ -217,11 +217,11 @@
 
 		<h3 style="">Solution</h3>
 	<div class="para" style="margin-bottom: 3rem;">
-				<p>Pictures of fingers  of people resting and sleeping were taken. From this, it was concluded that naturally,  the fingers are never straight or completely curled. Every finger is has 3 joints which produce 3 different angles when the finger is bent. These three angles are at the DIP, PIP and MCP joints-  as shown in the figure. Out of this three joints, the angle at DIP cannot be identified distinctly as it varies slowly with the bend of fingers. The angle at MCP is also not a good option to be considered as the input trigger, because it may or may not be bended along with the fingers by the user of the glove.</p>
+				<p>Pictures of fingers  of people resting and sleeping were taken. From this, it was concluded that naturally,  the fingers are never straight or completely curled. Every finger has 3 joints which produce 3 different angles when the finger is bent. These three angles are at the DIP, PIP and MCP joints-  as shown in the figure. Out of this three joints, the angle at DIP cannot be identified distinctly as it varies slowly with the bend of fingers. The angle at MCP is also not a good option to be considered as the input trigger, because it may or may not be bended along with the fingers by the user of the glove.</p>
 		</div>
         <img src="images/GGbend.png"  class="img-fluid w-100 d-block" style="margin-bottom: 3rem;">
 	<div class="para" >
-				<p>Here, the angle at PIP is the apt choice as it proportionally varies with the bend of the finger. All these bend angles fell in a range between 30 degrees to 50 degrees. Thus, for our system, a threshold angle of 60 degrees was chosen, beyond which all the user commands will be considered and the output will be given.</p>
+				<p>Here, the angle at PIP is the apt choice as it proportionally varies with the bend of the finger. A dataset of fingers at resting positions was collected and the angle of at the PIP joint was calculated. All these bend angles fell in a range of 30 degrees to 50 degrees. Thus, for our system, a threshold angle of 60 degrees was chosen, beyond which all the user commands will be considered and the output will be given.</p>
 		</div>
    	</div>
 	
@@ -281,7 +281,7 @@
 		<h3>What did learn?</h3>
 		<div class="col-lg-11" style="">
 		<ol>
-			<h5><li style="margin-bottom: 2rem; margin-top: 2rem;">This was my first time working on a hardware prototyping project. I realised that to design wearables it is very important to study the physical aspects of the users. This is a major challenge to be tackled as no human body is same and therefore the design of the product should be robust to be usable by the users irrespective of the variations in the physical characteristics of the human body. (in this case fingers)</li></h5>
+			<h5><li style="margin-bottom: 2rem; margin-top: 2rem;">This was my first time working on a hardware prototyping project. I realised that to design wearables it is very important to study the physical aspects of the users. This is a major challenge to be tackled as no human body is the same and therefore the design of the product should be robust to be usable by the users irrespective of the variations in the physical characteristics of the human body. (in this case fingers)</li></h5>
 			<h5><li style="margin-bottom: 2rem;">I understood that user research forms a major part while rolling out solutions. Understanding what the user needs and what are their constraints helped us define a solution.</li></h5>
 			<h5><li style="margin-bottom: 2rem;">I understood the importance of brainstorming to come up with innovative solutions.  Jotting down multiple possibilities for selecting the most efficient and feasible solution is the phase where a lot of research was required which added to my knowledge.</li></h5>
 			<h5><li style="margin-bottom: 2rem;">My team could write and publish a research paper on this project in the International Journal of Management Technology and Engineering-<a href="https://app.box.com/s/6t1c9d6v8c2favqdoqw3v8vmgcwylh89" style="color: #f44336;">View Paper</a></li></h5>			<!-- <h5><a href="" style="color: #f44336;">View all observations</a></h5> -->
