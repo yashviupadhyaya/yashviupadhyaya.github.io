@@ -25,11 +25,185 @@
 
 </head>
 
+<style type="text/css">
+
+/*.scroll{background-color:#0F0; overflow:hidden;}*/
+.content {
+    width: 100%;
+    position: relative;
+    top: 75%;
+}
+
+#scrollIndicator {
+    position: relative;
+    left: 50%;
+    margin-left: -15px;
+    bottom: 0;
+}
+
+#scrollIndicator i {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAgMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEuMiwxNC44bDcuMy03LjNjMC42LTAuNiwwLjYtMS44LDAtMi40cy0xLjgtMC42LTIuNCwwTDEwLDExLjJMMy45LDUuMWMtMC42LTAuNi0xLjgtMC42LTIuNCwwDQoJCQlzLTAuNiwxLjgsMCwyLjRsNy4zLDcuM0M5LjUsMTUuNSwxMC41LDE1LjUsMTEuMiwxNC44eiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat center center #e6e6e6;
+    background-size: 12px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 100;
+    left: 10px;
+    top: 10px;
+}
+
+#scrollIndicator:before,
+#scrollIndicator:after {
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #A5B0B5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    opacity: 0;
+}
+
+#scrollIndicator:before {
+    -webkit-animation: jumper 1.8s 0.33333s ease-out infinite;
+}
+
+#scrollIndicator:after {
+    -webkit-animation: jumper 1.8s 0.66666s ease-out infinite;
+}
+
+@-webkit-keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*html body [data-ca3_iconfont="ETmodules"]::before {
+    font-family: "ETmodules";
+}
+[data-ca3_icon]::before {
+    font-weight: normal;
+    content: attr(data-ca3_icon);
+}
+
+.ca3-scroll-down-arrow {
+	background-image: url(images/down-arrow.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 80px;
+	margin: 0px 0 0 -40px;
+	line-height: 60px;
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	color: #FFF;
+	text-align: center;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}*/
+
+.svg {
+  transition: transform .2s; /* Animation */
+}
+
+.svg:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+</style>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 <body>
   
 <!-- Header Start --> 
 
-<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+<nav class="navbar navbar-expand-lg  main-nav fixed-top" id="navbar" style="background-color: #fff; box-shadow: 0px 0px 10px 0px #F7F7F7;    
+">
 	<div class="container">
 	  <a class="navbar-brand" href="index.html">
 	  	<!-- <img src="images/logo.png" alt="" class="img-fluid"> -->
@@ -42,8 +216,8 @@
   
 		  <div class="collapse navbar-collapse" id="navbarsExample09">
 			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item  active"><a class="nav-link" href="index.html">Projects</a></li>
-			  <li class="nav-item"><a class="nav-link" href="OtherWork.html">Other</a></li>
+			  <li class="nav-item  active"><a class="nav-link" href="index.html#scroll">Projects</a></li>
+			  <!-- <li class="nav-item"><a class="nav-link" href="OtherWork.html">Other</a></li> -->
 			  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 			</ul>
 		</div>
@@ -51,21 +225,69 @@
 </nav>
 
 <!-- Header Close --> 
-
-
-
-<section class="section banner pb-0" style="margin-bottom: 3rem;">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-8 text-center" style="text-align-last: center;">
-				<h2>Hi! I'm<span class="text-color" style="margin-left: 1rem;">Yashvi Upadhyaya</span></h2>
-				<h5>An Information Technology Engineering student. I like to work on projects where humans and computers interact. My portfolio is a representation of all that I have learnt and accomplished during my undergraduate degree course. Have a look at some of my work... </h5>
-			</div>
-		</div>
-	</div>
+<section class="section banner-3" id="intro" >
 </section>
 
-<section class=" portfolio ">
+<section class="section banner-3" style="margin-top: 4rem; ">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-5">
+				<div class="profile mb-5">
+					<img src="images/1.jpg" style="border-radius: 0rem; padding: 60px ;" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-lg-6">
+				<h2 style="color: #000; margin: 0rem 0rem 1rem 0rem;">Yashvi Upadhyaya</h2>
+				<!-- <p class="lead mb-4">I am an undergraduate Information Technology Student</p> -->
+
+				<p class="mb-4" style="color: #A5B0B5; text-align: justify;">I am currently in the final year of my Bachelor's degree in Information technology Engineering from Dwarkadas J. Sanghvi College of Engineering, Mumbai.<br> <br>The potential of research and design in crafting usable technologies is something that appeals to me the most.<br><br>
+
+				<!-- My hobbies include <a href="https://drive.google.com/open?id=1-_tR3yyjeL5E3wAthH7ExL4z2nXSM275" style="color: #f44336;">dancing, doodling and photography.</a> <br><br> -->
+
+				I fit well into the roles of UX designer, Frontend developer, Researcher, and an avid learner.</p>
+
+			<span class="list-inline-item" style="margin: 0rem 2rem 0rem 0rem;"><a href="https://github.com/yashviupadhyaya/" target="_blank"><i class="ti-github" ></i></a></span>
+			<span class="list-inline-item" style="margin-right: 0rem;"><a href="https://www.linkedin.com/in/yashvi-upadhyaya-906b3015a/" target="_blank"><i class="ti-linkedin"></i></a></span>
+			<!-- <span class="list-inline-item" style="margin-right: 2rem;"><a href="#"><i class="ti-dribbble"></i></a></span> -->
+				<a href="Resume.pdf" class="btn" style="" target="blank" >Resume</a>
+		
+
+	</div>
+
+	</div>
+
+<!-- <div class="row" style="justify-content: center;"> -->
+	<!-- <section class="section banner pb-0" id="scroll" style="margin: 0rem 0rem; padding: 1rem; "> -->
+<!-- 	<div class="container" style="">
+		<div class="row justify-content-center scroll" style="justify-content: center; margin-top: 0rem;">
+		<div class="col-lg-1 text-center" style="text-align-last: center;">
+ 	               <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#scroll" style="height: 3rem; width: 3rem;">
+  	               </a>
+ 	        </div>
+		</div>
+	</div> -->
+
+
+<div class="content" id="scroll">
+  <a  href="#scroll" id="scrollIndicator" class="scrollIndicator">
+    <i></i>
+  </a>
+</div>
+	
+<!-- </section> -->
+
+<!-- </div> -->
+
+	</div>
+
+
+
+
+</section>
+
+
+<section class=" portfolio " id="portfolio" style="margin-top: 5rem;">
 	<div class="container">
 		<div class="row mb-5 justify-content-center">
 	      	<div class="col-10 text-center">
@@ -77,19 +299,20 @@
 		            <input type="radio" name="shuffle-filter" value="res" />Accessibility Projects
 		          </label>
 		          <label class="btn">
-		            <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+		            <input type="radio" name="shuffle-filter" value="design" />Web&App
 		          </label>
 <!-- 		           <label class="btn">
 		            <input type="radio" name="shuffle-filter" value="client" />Client
 		          </label> -->
 		          <label class="btn">
-		            <input type="radio" name="shuffle-filter" value="web" />Web Development
+		            <input type="radio" name="shuffle-filter" value="graphics" />Graphics
 		          </label>
 		        </div>
 	      	</div>
     	</div>	
 
 	<div class="row shuffle-wrapper portfolio-gallery">
+
 
 
 	      <div class="col-lg-4 col-12 mb-6 shuffle-item"  style="margin-bottom: 15px;" data-groups="[&quot;res&quot;]">
@@ -112,6 +335,23 @@
 	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;res&quot;]">
 	        <div class="position-relative inner-box">
 	            <div class="image position-relative ">
+	               <img src="images/portfolio/CST-front.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="Computerised speech therapy.html" >
+	                      <h5 class="mb-0">Computerised Speech Therapy</h5>
+	                      <p>Qualitative Research</p>
+     	                  <p style="color: #f44336;">View</p>
+	                    </a>
+	                  </div>
+	                </div> 
+	            </div>
+	        </div>
+	      </div>
+
+	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;res&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
 	               <img src="images/portfolio/CVI-front.png" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
 	                  <div class="overlay-inner">
@@ -125,24 +365,6 @@
 	            </div>
 	        </div>
 	      </div>
-
-	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;res&quot;]">
-	        <div class="position-relative inner-box">
-	            <div class="image position-relative ">
-	               <img src="images/portfolio/CST-front.png" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="Research.pdf" target="_blank">
-	                      <h5 class="mb-0">Computerised Speech Therapy</h5>
-	                      <p>Qualitative Research</p>
-     	                  <p style="color: #f44336;">View</p>
-	                    </a>
-	                  </div>
-	                </div> 
-	            </div>
-	        </div>
-	      </div>
-
 
 	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;design&quot;]">       
 	        <div class="position-relative inner-box" >
@@ -203,7 +425,7 @@
 	                  <div class="overlay-inner">
 	                    <a class="overlay-content" href="Coutloot.html">
 	                      <h5 class="mb-0">Coutloot</h5>
-	                      <p>UI design and Testing</p>
+	                      <p>My frist UI/UX internship</p>
      	                  <p style="color: #f44336;">View</p>
 	                    </a>
 	                  </div>
@@ -213,7 +435,24 @@
 	      </div>
 
 
-	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;web&quot;]">
+	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;graphics&quot;]">
+	        <div class="position-relative inner-box">
+	            <div class="image position-relative ">
+	               <img src="images/portfolio/Ink-front.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+	                <div class="overlay-box">
+	                  <div class="overlay-inner">
+	                    <a class="overlay-content" href="Graphics.html">
+	                      <h5 class="mb-0">Maternity Healthcare</h5>
+	                      <p>Illustrations made on Inkscape</p>
+     	                  <p style="color: #f44336;">View</p>
+	                    </a>
+	                  </div>
+	                </div> 
+	            </div>
+	        </div>
+	      </div>
+
+	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;design&quot;]">
 	        <div class="position-relative inner-box">
 	            <div class="image position-relative ">
 	               <img src="images/portfolio/SIH-front.png" alt="portfolio-image" class="img-fluid w-100 d-block">
@@ -230,25 +469,20 @@
 	        </div>
 	      </div>
 
-	      <div class="col-lg-4 col-12 mb-6 shuffle-item" style="margin-bottom: 15px;" data-groups="[&quot;web&quot;]">
-	        <div class="position-relative inner-box">
-	            <div class="image position-relative ">
-	               <img src="images/portfolio/Djcon-front.png" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="DJC.html">
-	                      <h5 class="mb-0">DJ Connect</h5>
-	                      <p>Web Development</p>
-     	                  <p style="color: #f44336;">View</p>
-	                    </a>
-	                  </div>
-	                </div> 
-	            </div>
-	        </div>
-	      </div>
-
 	</div>
 	      
+	</div>
+</section>
+<!-- #A5B0B5 -->
+<section class="section banner " style="margin: 2rem 0rem;  border-top: 2px solid #efefef;" >
+	<div class="container" style="">
+		<div class="row justify-content-center" style="justify-content: center;">
+		<div class="col-lg-6 text-center" style="text-align-last: center;">
+ 	               <a href="index.html" style="height: 3rem; width: 3rem; "> 
+ 	               	<h5 style="color:#A5B0B5; margin-top: 5rem">back to top</h5>
+  	               </a>
+ 	        </div>
+		</div>
 	</div>
 </section>
 

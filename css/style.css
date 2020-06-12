@@ -7,13 +7,13 @@ VERSION:	1.0
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Lato:400,600,700|Work+Sans:400,700,800");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 html {
   overflow-x: hidden;
 }
 
 body {
-  font-family: "Lato", "Montserrat";
+font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   font-weight: 300;
@@ -98,7 +98,7 @@ h6, .h6 {
 }
 
 .btn-main {
-  background: #f44336;
+  background: #A5B0B5;
   color: #fff;
 }
 
@@ -113,7 +113,7 @@ h6, .h6 {
 }
 
 .btn-black:hover {
-  background: #f44336;
+  background: #A5B0B5;
   color: #fff;
 }
 
@@ -134,13 +134,13 @@ a {
 }
 
 a:hover {
-  color: #f44336;
+  color: #A5B0B5;
   text-decoration: none;
   outline: none;
 }
 
 .bg-primary {
-  background: #f44336 !important;
+  background: #A5B0B5 !important;
 }
 
 .bg-secondary {
@@ -152,7 +152,7 @@ a:hover {
 }
 
 .text-color {
-  color: #f44336;
+  color: #A5B0B5;
 }
 
 .page-title h1 {
@@ -168,7 +168,7 @@ a:hover {
   width: 40px;
   height: 2px;
   margin-left: -25px;
-  background: #f44336;
+  background: #A5B0B5;
 }
 
 @media (max-width: 575px) {
@@ -236,7 +236,7 @@ ul.dropdown-menu > li > a, .navbar ul ul ul.dropdown-menu li .nav-link {
 }
 
 ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hover {
-  color: #f44336;
+  color: #A5B0B5;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -368,7 +368,7 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 }
 
 .portfolio .btn-group .btn:hover {
-  color: #f44336;
+  color: #A5B0B5;
 }
 
 .portfolio .btn-group:not(:first-child) > .btn, .portfolio .btn-group > .btn:not(:first-child) {
@@ -377,7 +377,7 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 }
 
 .portfolio .btn.active {
-  color: #f44336;
+  color: #A5B0B5;
 }
 
 .inner-box {
@@ -618,7 +618,7 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #f44336;
+  border-color: #A5B0B5;
 }
 
 textarea.form-control {
@@ -642,7 +642,7 @@ textarea.form-control {
   width: 40px;
   height: 2px;
   margin-left: -25px;
-  background: #f44336;
+  background: #A5B0B5;
 }
 
 .letter-spacing {
@@ -673,7 +673,7 @@ textarea.form-control {
 }
 
 .post .post-content a:hover h4 {
-  color: #f44336;
+  color: #A5B0B5;
 }
 
 .pagination {
@@ -691,12 +691,12 @@ textarea.form-control {
 }
 
 .pagination li a:hover {
-  background: #f44336;
+  background: #A5B0B5;
   color: #fff;
 }
 
 .pagination li.active a {
-  background: #f44336;
+  background: #A5B0B5;
   color: #fff;
 }
 
@@ -803,7 +803,7 @@ textarea.form-control {
 }
 
 .footer-widget a:hover {
-  color: #f44336;
+  color: #A5B0B5;
 }
 
 .para{
@@ -924,7 +924,7 @@ textarea.form-control {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  /*background-color:#f44336;*/
+  /*background-color:#A5B0B5;*/
   color: black;
 }
 

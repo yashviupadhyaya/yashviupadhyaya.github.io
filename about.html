@@ -25,6 +25,73 @@
 
 </head>
 
+
+<style type="text/css">
+
+/*.scroll{background-color:#0F0; overflow:hidden;}*/
+
+html body [data-ca3_iconfont="ETmodules"]::before {
+    font-family: "ETmodules";
+}
+[data-ca3_icon]::before {
+    font-weight: normal;
+    content: attr(data-ca3_icon);
+}
+
+.ca3-scroll-down-arrow {
+	background-image: url(images/portfolio/down-arrow.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 80px;
+	margin: 0px 0 0 -40px;
+	line-height: 60px;
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	color: #FFF;
+	text-align: center;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+.svg {
+  transition: transform .2s; /* Animation */
+}
+
+.svg:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+
 <body>
   
 <!-- Navgiation Start -->
@@ -43,8 +110,8 @@
   
 		  <div class="collapse navbar-collapse" id="navbarsExample09">
 			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item  active"><a class="nav-link" href="index.html">Projects</a></li>
-			  <li class="nav-item"><a class="nav-link" href="OtherWork.html">Other</a></li>
+			  <li class="nav-item  active"><a class="nav-link" href="index.html#scroll">Projects</a></li>
+			  <!-- <li class="nav-item"><a class="nav-link" href="OtherWork.html">Other</a></li> -->
 			  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 			</ul>
 		</div>
@@ -58,23 +125,24 @@
 <!-- Navigation ENd -->
 
 <!-- Banner start -->
-<section class="section banner-3">
+<section class="section banner-3" style="margin-top: 6rem; ">
 	<div class="container">
 		<div class="row justify-content-center align-items-center">
 			<div class="col-lg-5">
 				<div class="profile mb-5">
-					<img src="images/1.jpg" style="border-radius: 50%; padding:70px;" alt="" class="img-fluid">
+					<img src="images/1.jpg" style="border-radius: 5rem; padding:70px;" alt="" class="img-fluid">
 				</div>
 			</div>
-			<div class="col-lg-7">
-				<h2 style="color: #f44336;">Yashvi Upadhyaya</h2>
+			<div class="col-1"></div>
+			<div class="col-lg-6">
+				<h2 style="color: #000; margin: 0rem 0rem 1rem 0rem;">Yashvi Upadhyaya</h2>
 				<!-- <p class="lead mb-4">I am an undergraduate Information Technology Student</p> -->
 
-				<h5 class="mb-4">I am currently in the final year of my Bachelor's degree in Information technology Engineering from Dwarkadas J. Sanghvi College of Engineering, Mumbai.<br><br> The potential of research and design in crafting usable technologies is something that appeals to me the most. Therefore, I aim to pursue M.S. in Human-Computer Interaction.<br><br>
+				<p class="mb-4" style="color: #A5B0B5; text-align: justify;">I am currently in the final year of my Bachelor's degree in Information technology Engineering from Dwarkadas J. Sanghvi College of Engineering, Mumbai.<br> <br>The potential of research and design in crafting usable technologies is something that appeals to me the most.<br><br>
 
 				<!-- My hobbies include <a href="https://drive.google.com/open?id=1-_tR3yyjeL5E3wAthH7ExL4z2nXSM275" style="color: #f44336;">dancing, doodling and photography.</a> <br><br> -->
 
-				I fit well into the roles of UI/UX designer, Frontend developer, Researcher, and an avid learner. Have a look at my profile via the following links:</h5>
+				I fit well into the roles of UX designer, Frontend developer, Researcher, and an avid learner. Have a look at my profile via the following links:</p>
 
 			<span class="list-inline-item" style="margin: 0rem 2rem 0rem 0rem;"><a href="https://github.com/yashviupadhyaya/" target="_blank"><i class="ti-github" ></i></a></span>
 			<span class="list-inline-item" style="margin-right: 0rem;"><a href="https://www.linkedin.com/in/yashvi-upadhyaya-906b3015a/" target="_blank"><i class="ti-linkedin"></i></a></span>
