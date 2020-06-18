@@ -29,86 +29,8 @@
 <style type="text/css">
 
 /*.scroll{background-color:#0F0; overflow:hidden;}*/
-.content {
-    width: 100%;
-    position: relative;
-    top: 75%;
-}
 
-#scrollIndicator {
-    position: relative;
-    left: 50%;
-    margin-left: -15px;
-    bottom: 0;
-}
-
-#scrollIndicator i {
-    width: 30px;
-    height: 30px;
-    display: block;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAgMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEuMiwxNC44bDcuMy03LjNjMC42LTAuNiwwLjYtMS44LDAtMi40cy0xLjgtMC42LTIuNCwwTDEwLDExLjJMMy45LDUuMWMtMC42LTAuNi0xLjgtMC42LTIuNCwwDQoJCQlzLTAuNiwxLjgsMCwyLjRsNy4zLDcuM0M5LjUsMTUuNSwxMC41LDE1LjUsMTEuMiwxNC44eiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat center center #e6e6e6;
-    background-size: 12px;
-    border-radius: 100%;
-    position: absolute;
-    z-index: 100;
-    left: 10px;
-    top: 10px;
-}
-
-#scrollIndicator:before,
-#scrollIndicator:after {
-    content: "";
-    top: 0;
-    left: 0;
-    background-color: #A5B0B5;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position: absolute;
-    opacity: 0;
-}
-
-#scrollIndicator:before {
-    -webkit-animation: jumper 1.8s 0.33333s ease-out infinite;
-}
-
-#scrollIndicator:after {
-    -webkit-animation: jumper 1.8s 0.66666s ease-out infinite;
-}
-
-@-webkit-keyframes jumper {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    5% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-
-@keyframes jumper {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    5% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-/*html body [data-ca3_iconfont="ETmodules"]::before {
+html body [data-ca3_iconfont="ETmodules"]::before {
     font-family: "ETmodules";
 }
 [data-ca3_icon]::before {
@@ -117,7 +39,7 @@
 }
 
 .ca3-scroll-down-arrow {
-	background-image: url(images/down-arrow.svg);
+	background-image: url(images/portfolio/down-arrow.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -159,7 +81,7 @@
   0%   { transform:translate(0,-20px); opacity: 0;  }
   50%  { opacity: 1;  }
   100% { transform:translate(0,20px); opacity: 0; }
-}*/
+}
 
 .svg {
   transition: transform .2s; /* Animation */
@@ -168,20 +90,6 @@
 .svg:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-
-
 </style>
 
 <body>
@@ -217,24 +125,24 @@
 <!-- Navigation ENd -->
 
 <!-- Banner start -->
-<section class="section banner-3" style="margin-top: 0rem; ">
+<section class="section banner-3" style="margin-top: 2rem; ">
 	<div class="container">
 		<div class="row justify-content-center align-items-center">
 			<div class="col-lg-5">
 				<div class="profile mb-5">
-					<img src="images/1.jpg" style="border-radius: 0rem; padding:70px;" alt="" class="img-fluid">
+					<img src="images/1.jpg" style="border-radius: 5rem; padding:70px;" alt="" class="img-fluid">
 				</div>
 			</div>
 			<div class="col-1"></div>
 			<div class="col-lg-6">
-				<h4 style="color: #000; margin: 0rem 0rem 1rem 0rem; text-align: center;">“It is not the technology that drives the user but it’s the other way round”
-				</h4>
-				<div class="row" style="justify-content: center;">-Yashvi Upadhyaya</div>
-				<!-- <h4 style="color: #A5B0B5;">-Yashvi Upadhyaya</h4> -->
+				<h2 style="color: #000; margin: 0rem 0rem 1rem 0rem;">Yashvi Upadhyaya</h2>
 				<!-- <p class="lead mb-4">I am an undergraduate Information Technology Student</p> -->
-				<br>
 
-				<p class="mb-4" style="color: #000; text-align: justify;">Hello.<br> I am IT Engineer and a Human Computer Interaction aspirant. The potential of research and design in crafting usable technologies is something that appeals to me the most. I have 2 years of experience in UI/UX design. My skillset include product design as well as development.</p>
+				<p class="mb-4" style="color: #A5B0B5; text-align: justify;">I am currently in the final year of my Bachelor's degree in Information technology Engineering from Dwarkadas J. Sanghvi College of Engineering, Mumbai.<br> <br>The potential of research and design in crafting usable technologies is something that appeals to me the most.<br><br>
+
+				<!-- My hobbies include <a href="https://drive.google.com/open?id=1-_tR3yyjeL5E3wAthH7ExL4z2nXSM275" style="color: #f44336;">dancing, doodling and photography.</a> <br><br> -->
+
+				I fit well into the roles of UX designer, Frontend developer, Researcher, and an avid learner. Have a look at my profile via the following links:</p>
 
 			<span class="list-inline-item" style="margin: 0rem 2rem 0rem 0rem;"><a href="https://github.com/yashviupadhyaya/" target="_blank"><i class="ti-github" ></i></a></span>
 			<span class="list-inline-item" style="margin-right: 0rem;"><a href="https://www.linkedin.com/in/yashvi-upadhyaya-906b3015a/" target="_blank"><i class="ti-linkedin"></i></a></span>
@@ -248,44 +156,6 @@
 		</div>
 	</div>
 </section>
-
-
-<div class="content" id="scroll">
-  <a  href="#scroll" id="scrollIndicator" class="scrollIndicator">
-    <i></i>
-  </a>
-</div>
-
-
-<section class="section banner-3" style="margin-top: 2rem; ">
-	<div class="row" style="justify-content: center;">
-		<div class="col-6">
-			<h4>About Me...</h4><br>
-			<p>
-				A creative engineer. I love to dig into the minute details of a problem and find possible ways out of it. Throughout the 4 years of my engineering, I have understood the power of technology and its potential to solve problems. My intrigue in technology and the motive to solve the problem of the people has inspired me to explore the fields of Virtual Reality, Signal Processing, Software development, embedded systems, machine learning, and algorithms. <br><br>
-
-				And otherwise...I am a nature lover who loves sketching and dancing. I have been a part of the college basketball team for 2 years and the departmental dance team. 
-			</p>
-		</div>
-	</div>	
-	<div class="row" style="justify-content: center; margin-top: 5rem;">
-		<div class="col-6">
-			<h4>Me & HCI...</h4><br>
-During my undergrad in Information Technology, I gave a technical presentation as a part of an academic course - ‘Principles of Communication’ on the electric wheelchair of Stephen Hawking, proposed by the Human-Computer Interaction team from the Intel labs. The presentation gave me a holistic understanding of how technologies can be developed to overcome the problems that exist. In the quest for the answer to my ever daunting question - “ How do I make a useful project? ” I got the answer … It's the ‘Users’ who form the true foundation of usable technologies. I instantly knew which area I want to work on... It was the technology that interacts with the users... It was Human-Computer Interaction which answered my question regarding the usability of a product.			</p>
-		</div>
-	</div>	
-	<div class="row" style="justify-content: center; margin-top: 5rem;">
-		<div class="col-6">
-			<h4>What I think….</h4><br>
-			<p>
-In my view, the world we live in has abundant real-world challenges and excessive systems. Building accessible technologies can bridge the gap between human needs and technological solutions. This can be done using modern techniques in the field of Human-Computer Interaction. My goal is to develop healthcare products for the disabled to aid them in communicating and performing daily tasks.
-
-			</p>
-		</div>
-	</div>
-</section>
-
-
 
 <!-- Banner End -->
 
